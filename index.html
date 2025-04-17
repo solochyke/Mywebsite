@@ -1,1 +1,61 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftTrack Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SwiftTrack Delivery</h1>
+    </header>
+    <nav>
+        <button class="menu-button" onclick="toggleMenu()">Menu</button>
+        <ul class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#track">Track Package</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Fast and Reliable Delivery Services</h1>
+        <p>Your trusted partner for all your shipping needs.</p>
+        <button>Get a Quote</button>
+    </section>
+    <section id="track" class="tracking-section">
+        <h2>Track Your Package</h2>
+        <form class="tracking-form" id="trackForm">
+            <input type="text" id="trackingNumber" placeholder="Enter your tracking number">
+            <button type="button" onclick="trackPackage()">Track</button>
+        </form>
+        <div id="tracking-result"> </div>
+    </section>
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Express Delivery</h3>
+                <p>Fast and efficient delivery for urgent shipments.</p>
+            </div>
+            <div class="service-card">
+                <h3>Standard Shipping</h3>
+                <p>Cost-effective delivery for your everyday needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>International Shipping</h3>
+                <p>Reliable shipping solutions across the globe.</p>
+            </div>
+            <div class="service-card">
+                <h3>Same-Day Delivery</h3>
+                <p>Get your packages delivered within the same day (within select areas).</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2015 SwiftTrack Delivery. All rights reserved by Solomon chyke.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
